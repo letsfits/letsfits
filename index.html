@@ -84,37 +84,37 @@
 <div class="container" id="productContainer">
 
   <!-- PRODUK 1 -->
-<div class="card" data-name="fromzero putih garis">
+<div class="card" data-name="111">
   <img src="IMG-20260424-WA0004.jpg">
-  <h4>Fromzero Putih Garis</h4>
+  <h4>Kode: 111 - Fromzero Putih Garis</h4>
   <a href="https://s.shopee.co.id/901Vm2JSFp">Beli Sekarang</a>
 </div>
 
 <!-- PRODUK 2 -->
-<div class="card" data-name="fromzero putih">
+<div class="card" data-name="112">
   <img src="IMG-20260424-WA0005.jpg">
-  <h4>Fromzero Putih</h4>
+  <h4>Kode: 112 - Fromzero Putih</h4>
   <a href="https://s.shopee.co.id/4qBwoU10IO">Beli Sekarang</a>
 </div>
 
 <!-- PRODUK 3 -->
-<div class="card" data-name="fromzero hitam putih">
-  <img src="IMG-20260424-WA0006.jpg">
-  <h4>Fromzero Hitam Putih</h4>
+<div class="card" data-name="113">
+  <img src=" IMG-20260424-WA0006.jpg ">
+  <h4>Kode: 113 - Fromzero Hitam Putih</h4>
   <a href="https://s.shopee.co.id/5q4U0XAER4">Beli Sekarang</a>
 </div>
 
 <!-- PRODUK 4 -->
-<div class="card" data-name="fromzero hitam">
+<div class="card" data-name="114">
   <img src="IMG-20260424-WA0012.jpg">
-  <h4>Fromzero Full Hitam</h4>
+  <h4>Kode: 114 - Fromzero Full Hitam</h4>
   <a href="https://s.shopee.co.id/10zEFhZX3O">Beli Sekarang</a>
 </div>
 
 <!-- PRODUK 5 -->
-<div class="card" data-name="fromzero hitam putih">
+<div class="card" data-name="115">
   <img src="IMG-20260424-WA0001.jpg">
-  <h4>Fromzero Hitam Putih</h4>
+  <h4>Kode: 115 - Fromzero Hitam Putih</h4>
   <a href="https://s.shopee.co.id/3LN8sKeNXY">Beli Sekarang</a>
 </div>
   
@@ -127,9 +127,9 @@ function searchProduct() {
   let cards = document.querySelectorAll(".card");
 
   cards.forEach(card => {
-    let name = card.getAttribute("data-name");
+    let data = card.getAttribute("data-name").toLowerCase();
 
-    if (name.includes(input)) {
+    if (data.includes(input)) {
       card.style.display = "block";
     } else {
       card.style.display = "none";
